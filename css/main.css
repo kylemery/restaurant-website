@@ -18,7 +18,7 @@ html {
 
 body {
   margin: 0;
-  font-family: sans-serif;
+  font-family: Cabin, sans-serif;
 }
 
 nav {
@@ -72,6 +72,7 @@ nav {
   position: absolute;
   background-color: grey;
   width: 100%;
+  z-index: 1000;
 }
 
 .nav-check:checked ~ .nav {
@@ -104,4 +105,51 @@ h1 {
 
 img {
   width: 100%;
+}
+
+h2 {
+  font-family: "Lobster", sans-serif;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.all-hisory {
+  position: relative;
+}
+
+.history-text {
+  position: absolute;
+  top: 4em;
+}
+
+.history-text p {
+  padding: 0.75em;
+  margin-bottom: 0;
+  margin-top: 2em;
+}
+
+.all-health {
+  position: relative;
+}
+
+.health-text {
+  position: absolute;
+  top: 1em;
+  padding: 0.57em;
+}
+
+h3 {
+  text-align: center;
+}
+
+.health-text h2 {
+  margin-bottom: 0;
+}
+
+.health-text h3 {
+  margin-top: 0.25em;
+}
+
+.health-text p {
+  margin-top: 3em;
 }
