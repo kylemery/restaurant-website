@@ -120,6 +120,12 @@ h2 {
   overflow: hidden;
   position: relative;
   display: block;
+  overflow: hidden;
+  height: 30rem;
+  background-image: url(../images/placeholder-1by1.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .history-text {
@@ -130,20 +136,47 @@ h2 {
   margin-top: 1em;
   padding-left: 2em;
   padding-right: 2em;
+  background-color: rgba(255, 255, 255, 0.6);
+  transition-property: background-color;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-out;
+}
+
+.history-text:hover {
+  background-color: rgba(255, 255, 255, 0.75);
+  transition-property: background-color;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-out;
 }
 
 .all-health {
   position: relative;
   display: block;
   overflow: hidden;
+  height: 30rem;
+  background-image: url(../images/placeholder-1by1.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .health-text {
   position: absolute;
-  top: 1em;
+  top: 0;
   padding: 0.57em;
   padding-left: 2em;
   padding-right: 2em;
+  background-color: rgba(255, 255, 255, 0.6);
+  transition-property: background-color;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-out;
+}
+
+.health-text:hover {
+  background-color: rgba(255, 255, 255, 0.75);
+  transition-property: background-color;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-out;
 }
 
 h3 {
@@ -166,6 +199,13 @@ h3 {
   position: relative;
   display: block;
   text-align: center;
+  overflow: hidden;
+  height: 30rem;
+  background-image: url(../images/placeholder-1by1.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  }
 }
 
 .banner-text {
@@ -174,6 +214,11 @@ h3 {
   padding: 0.57em;
   text-align: center;
   width: 100%;
+}
+
+.banner-text h2 {
+  padding: 1em;
+  padding-bottom: 0;
 }
 
 .banner-text p {
@@ -193,9 +238,115 @@ h3 {
   padding: 0.75em;
   margin: auto;
   display: block;
-  max-width: 50%;
+  max-width: 10em;
   text-align: center;
   border: 1px solid grey;
   border-radius: 0.25em;
   margin-top: 1em;
+}
+
+.banner a:hover {
+  background-color: black;
+  border: 1px solid black;
+  font-weight: bold;
+  transition-property: background-color, border;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-out;
+}
+
+.all-simple {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  height: 30rem;
+  background-image: url(../images/placeholder-1by1.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.simple-text {
+  position: absolute;
+  top: 0;
+  padding: 0.75em;
+  margin-bottom: 0;
+  margin-top: 1em;
+  padding-left: 2em;
+  padding-right: 2em;
+  background-color: rgba(255, 255, 255, 0.6);
+  transition-property: background-color;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-out;
+}
+
+.simple-text:hover {
+  background-color: rgba(255, 255, 255, 0.75);
+  transition-property: background-color;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-out;
+}
+
+footer {
+  display: block;
+  background-color: black;
+  color: lightgrey;
+  margin: 0;
+  padding: 0.25em;
+}
+
+footer p {
+  margin-left: 2em;
+}
+
+@media only screen and (min-width: 25em) {
+
+  .simple-text {
+    padding: 4em;
+  }
+
+  .health-text {
+    padding: 4em;
+  }
+
+  .history-text {
+    padding: 4em;
+  }
+
+  .banner-text {
+    padding: 4em;
+    top: 0;
+  }
+
+}
+
+@media only screen and (min-width: 36em) {
+
+  .simple-text {
+    max-width: 38em;
+  }
+
+  .simple-text h2 {
+    text-align: left;
+  }
+
+  .health-text {
+    max-width: 38em;
+  }
+
+  .health-text h2 {
+    text-align: left;
+  }
+
+  .health-text h3 {
+    text-align: left;
+  }
+
+  .history-text {
+    max-width: 38em;
+  }
+
+  .history-text h2 {
+    text-align: left;
+  }
+
 }
