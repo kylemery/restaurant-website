@@ -3,6 +3,12 @@
 @-o-viewport { width: device-width; scale: 1; }
 @-webkit-viewport { width: device-width; scale: 1; }
 @viewport { width: device-width; scale: 1; }
+@import url(http://weloveiconfonts.com/api/?family=brandico);
+
+[class*="brandico-"]:before {
+  font-family: 'brandico', sans-serif;
+}
+
 
 html {
   box-sizing: border-box;
@@ -14,6 +20,29 @@ html {
 
 *, *::before, *::after {
   box-sizing: inherit;
+}
+
+footer p {
+  display: inline-block;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+  display: inline;
+  float: left;
+}
+
+footer .facebook:hover {
+  color: #3366CC;
+}
+
+footer .twitter:hover {
+  color: lightblue;
+}
+
+footer .instagram:hover {
+  color: #CC9966;
 }
 
 body {
@@ -453,14 +482,6 @@ footer p {
     text-align: center;
   }
 
-  .link-cards p {
-    left: 0;
-    right: 0;
-    top: 8em;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
   .lc-health {
     display: block;
     position:relative;
@@ -469,7 +490,7 @@ footer p {
   }
 
   .lc-health a:hover {
-    font-size: 102%;
+    font-size: 110%;
 
     transition-property: font-size;
     transition-duration: 0.25s;
@@ -478,10 +499,9 @@ footer p {
 
   .lc-health p {
     position: absolute;
-    top: 1em;
-
-    margin-left: auto;
-    margin-right: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 
   .link-cards a {
@@ -503,7 +523,7 @@ footer p {
   }
 
   .lc-history a:hover {
-    font-size: 102%;
+    font-size: 110%;
 
     transition-property: font-size;
     transition-duration: 0.25s;
@@ -512,7 +532,9 @@ footer p {
 
   .lc-history p {
     position: absolute;
-    top: 1em;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 
   .lc-simple {
@@ -523,7 +545,7 @@ footer p {
   }
 
   .lc-simple a:hover {
-    font-size: 102%;
+    font-size: 110%;
 
     transition-property: font-size;
     transition-duration: 0.25s;
@@ -532,7 +554,9 @@ footer p {
 
   .lc-simple p {
     position: absolute;
-    top: 1em;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 
   .all-history {
@@ -633,8 +657,6 @@ footer p {
 
   .lc-health p {
     margin: 0;
-    display: inline-block;
-    top: 3em;
   }
 
   .lc-history {
@@ -643,8 +665,6 @@ footer p {
 
   .lc-history p {
     margin: 0;
-    display: inline-block;
-    top: 3em;
   }
 
   .lc-simple {
@@ -653,8 +673,6 @@ footer p {
 
   .lc-simple p{
     margin: 0;
-    display: inline-block;
-    top: 3em;
   }
 
 }
