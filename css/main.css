@@ -1,14 +1,13 @@
+@import url("http://weloveiconfonts.com/api/?family=brandico");
 @-moz-viewport { width: device-width; scale: 1; }
 @-ms-viewport { width: device-width; scale: 1; }
 @-o-viewport { width: device-width; scale: 1; }
 @-webkit-viewport { width: device-width; scale: 1; }
 @viewport { width: device-width; scale: 1; }
-@import url(http://weloveiconfonts.com/api/?family=brandico);
 
-[class*="brandico-"]:before {
-  font-family: 'brandico', sans-serif;
+[class*="brandico-"]::before {
+  font-family: "brandico", sans-serif;
 }
-
 
 html {
   box-sizing: border-box;
@@ -34,7 +33,7 @@ footer a {
 }
 
 footer .facebook:hover {
-  color: #3366CC;
+  color: #36c;
 }
 
 footer .twitter:hover {
@@ -42,7 +41,7 @@ footer .twitter:hover {
 }
 
 footer .instagram:hover {
-  color: #CC9966;
+  color: #c96;
 }
 
 body {
@@ -106,7 +105,7 @@ nav {
 }
 
 .nav-check:checked ~ .nav {
-display: block;
+  display: block;
 }
 
 .nav-check {
@@ -150,7 +149,7 @@ h2 {
   display: block;
   overflow: hidden;
   height: 30rem;
-  background-image: url(../images/placeholder-1by1.svg);
+  background-image: url("../images/placeholder-1by1.svg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -182,7 +181,7 @@ h2 {
   display: block;
   overflow: hidden;
   height: 30rem;
-  background-image: url(../images/placeholder-1by1.svg);
+  background-image: url("../images/placeholder-1by1.svg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -190,7 +189,7 @@ h2 {
 
 .health-text {
   position: absolute;
-  top: 2em;;
+  top: 2em;
   padding: 0.57em;
   padding-left: 2em;
   padding-right: 2em;
@@ -229,11 +228,10 @@ h3 {
   text-align: center;
   overflow: hidden;
   height: 30rem;
-  background-image: url(../images/placeholder-1by1.svg);
+  background-image: url("../images/placeholder-1by1.svg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  }
 }
 
 .banner-text {
@@ -293,7 +291,7 @@ h3 {
   display: block;
   overflow: hidden;
   height: 30rem;
-  background-image: url(../images/placeholder-1by1.svg);
+  background-image: url("../images/placeholder-1by1.svg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -625,18 +623,16 @@ footer p {
   .big-nav li {
     background-color: lightblue;
     border: white 2px solid;
-
-    transition-property: background-color,border;
+    transition-property: background-color, border;
     transition-duration: 0.75s;
     transition-timing-function: ease-out;
-}
+  }
 
   .big-nav li:hover {
     background-color: white;
     border: white 2px solid;
     color: white;
-
-    transition-property: background-color,border;
+    transition-property: background-color, border;
     transition-duration: 0.75s;
     transition-timing-function: ease-out;
   }
@@ -674,7 +670,7 @@ footer p {
     padding: 1em;
   }
 
-  .lc-simple p{
+  .lc-simple p {
     margin: 0;
   }
 
