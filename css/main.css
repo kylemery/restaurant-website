@@ -33,6 +33,10 @@ footer a {
   line-height: 1.4;
 }
 
+.burger:hover {
+  background-color: lightblue;
+}
+
 footer .facebook:hover {
   color: #36c;
 }
