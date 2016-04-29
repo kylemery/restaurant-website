@@ -71,7 +71,7 @@ nav {
   font-family: Cabin, sans-serif;
 
   transition-property: background-color, color;
-  transition-duration: 0.25s;
+  transition-duration: 0.5s;
   transition-timing-function: ease-out;
 }
 
@@ -422,41 +422,46 @@ footer p {
   }
 
   .big-nav a {
-    text-decoration: none;
-    color: black;
-  }
-
-  .big-nav li {
     list-style-type: none;
-    display: inline-block;
+    display: block;
     float: left;
     width: 33.3333%;
     text-align: center;
     padding-bottom: 1em;
     padding-top: 1em;
+    text-decoration: none;
+    color: black;
 
     transition-property: background-color, color;
     transition-duration: 0.75s;
     transition-timing-function: ease-out;
   }
 
-  .big-nav li:first-child {
+  .big-nav a:first-child {
     border: 2px solid lightblue;
     border-left: none;
+    display: block;
   }
 
-  .big-nav li:last-child {
+  nav li {
+    list-style-type: none;
+  }
+
+  .big-nav a:last-child {
     border: 2px solid lightblue;
     border-right: none;
+    display: block;
   }
 
-  .big-nav li:nth-child(2) {
+  .big-nav a:nth-child(2) {
     border: 2px solid lightblue;
     border-right: none;
     border-left: none;
+    display: block;
   }
 
-  .big-nav li:hover {
+  .big-nav a:hover {
+    display: block;
     background-color: lightblue;
     color: white;
 
@@ -604,7 +609,7 @@ footer p {
     float: none;
   }
 
-  .big-nav li {
+  .big-nav a {
     display: inline-block;
     width: 25%;
     float: right;
@@ -615,32 +620,34 @@ footer p {
     clear: right;
   }
 
-  .big-nav li {
+  .big-nav a {
+    display: block;
     background-color: lightblue;
+    color: white;
     border: white 2px solid;
-    transition-property: background-color, border;
+    transition-property: background-color, color, border;
     transition-duration: 0.75s;
     transition-timing-function: ease-out;
   }
 
-  .big-nav li:hover {
+  .big-nav a:hover {
     background-color: white;
     border: white 2px solid;
-    color: white;
-    transition-property: background-color, border;
+    color: black;
+    transition-property: background-color, color, border;
     transition-duration: 0.75s;
     transition-timing-function: ease-out;
   }
 
-  .big-nav li:first-child:hover {
+  .big-nav a:first-child:hover {
     border-left: none;
   }
 
-  .big-nav li:last-child:hover {
+  .big-nav a:last-child:hover {
     border-right: none;
   }
 
-  .big-nav li:nth-child(2):hover {
+  .big-nav a:nth-child(2):hover {
     border-right: none;
     border-left: none;
   }
